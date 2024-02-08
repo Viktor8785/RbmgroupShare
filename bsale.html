@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>RBM Group</title>
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body">
+    <div class="page_body-wrapper">
+      <section class="header">
+        <nav class="header_nav" id="header-nav">
+          <img class="header_menu" src="img/icons/menu.svg" id="header-menu" alt="">
+          <a href="index.html">
+            <img class="header_logo" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+          </a>
+          <img class="header_close" src="img/icons/exit.svg" id="header-close" alt="">
+          <div class="header_nav-wrapper" id="header-nav-wrapper">
+            <a class="header_nav-item" href="rent.html">Аренда</a>
+            <a class="header_nav-item" href="sale.html">Покупка (инвестиции)</a>
+            <a class="header_nav-item header_nav-item--active">Готовый бизнес</a>
+          </div>
+        </nav>
+      </section>
+      <section class="filter-rent">
+        <form class="filter-rent_form">
+          <h1 class="filter-bsale_title">Купить готовый бизнес в Санкт-Петербурге</h1>
+           <div class="filter-rent_filter">
+            <div class="filter-bsale_filter-wrapper">
+              <div class="filter-rent_block filter-rent_block--business-sale">
+                <p class="block_title">Что ищем?</p>
+                <div class="type_wrapper">
+                  <label for="all-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="all-bsale" name="allBsale">
+                    <div class="type_category">Все объекты</div>
+                  </label>
+                  <label for="сommercial-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="сommercial-bsale" name="сommercialBsale">
+                    <div class="type_category">Торговое</div>
+                  </label>
+                  <label for="ofice-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="ofice-bsale" name="oficeBsale">
+                    <div class="type_category">Офисы</div>
+                  </label>
+                  <label for="hotel-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="hotel-bsale" name="hotelBsale">
+                    <div class="type_category">Отели</div>
+                  </label>
+                  <label for="autoservice-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="autoservice-bsale" name="autoserviceBsale">
+                    <div class="type_category">Автосервис, мойка</div>
+                  </label>
+                </div>
+                <div class="type_wrapper">
+                  <label for="spa-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="spa-bsale" name="spaBsale">
+                    <div class="type_category">Сауна, SPA</div>
+                  </label>
+                  <label for="catering-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="catering-bsale" name="cateringBsale">
+                    <div class="type_category">Общепит</div>
+                  </label>
+                  <label for="warehouse-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="warehouse-bsale" name="warehouseBsale">
+                    <div class="type_category">Склады</div>
+                  </label>
+                  <label for="medical-bsale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_bsale" id="medical-bsale" name="medicalBsale">
+                    <div class="type_category">Мед. центр</div>
+                  </label>
+                  <div class="type-dropdown" id="bsale-dropdown">
+                    <input class="type-dropdown_input" id="bsale-input" type="text" value="Другое" name="otherBsale" readonly>
+                    <div class="type-dropdown_options">
+                      <div class="options_item" onclick="showBsale('Другое')">Другое</div>
+                      <div class="options_item" onclick="showBsale('Ларек')">Ларек</div>
+                      <div class="options_item" onclick="showBsale('Стадион')">Стадион</div>
+                      <div class="options_item" onclick="showBsale('Парковка')">Парковка</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-rent_block filter-rent_block--square">
+                <p class="block_title">Бюджет, ₽</p>
+                <div class="price_wrapper">
+                  <input class="price_input bsale-budget_price" type="text" placeholder="От" id="bsale-price-min" name="bsalePriceMin">
+                  <input class="price_input bsale-budget_price bsale-budget_price--to" type="text" placeholder="До" name="bsalePriceMax">
+                </div>
+                <div class="type-bsale_wrapper">
+                  <label for="budget1" class="type_label">
+                    <input type="radio" class="visually-hidden type-all" id="budget1" name="budget">
+                    <div class="type-bsale_category">500 тыс</div>
+                  </label>
+                  <label for="budget2" class="type_label">
+                    <input type="radio" class="visually-hidden type-all" id="budget2" name="budget">
+                    <div class="type-bsale_category">1 млн</div>
+                  </label>
+                  <label for="budget3" class="type_label">
+                    <input type="radio" class="visually-hidden type-all" id="budget3" name="budget">
+                    <div class="type-bsale_category">2 млн</div>
+                  </label>
+                  <label for="budget4" class="type_label">
+                    <input type="radio" class="visually-hidden type-all" id="budget4" name="budget">
+                    <div class="type-bsale_category">3 млн</div>
+                  </label>
+                  <label for="budget5" class="type_label">
+                    <input type="radio" class="visually-hidden type-all" id="budget5" name="budget">
+                    <div class="type-bsale_category type-bsale_category--last">5 млн</div>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-rent_block filter-rent_block--location">
+                <p class="block_title">Окупаемость</p>
+                <div class="type-dropdown dropdown--payback" id="payback-dropdown">
+                  <input class="type-dropdown_input" id="payback-input" type="text" value="Любая" name="paybackBsale" readonly>
+                  <div class="type-dropdown_options dropdown_options--payback">
+                    <div class="options_item options_item--payback" onclick="showPayback('Любая')">Любая</div>
+                    <div class="options_item options_item--payback" onclick="showPayback('3 года')">3 года</div>
+                    <div class="options_item options_item--payback" onclick="showPayback('5 лет')">5 лет</div>
+                    <div class="options_item options_item--payback" onclick="showPayback('7 лет')">7 лет</div>
+                  </div>
+                </div>
+                <label class="form-switch">
+                  <input type="checkbox">
+                  <i></i>
+                  <span class="form-switch_title">Только в аренду бизнес, без покупки</span>
+                </label>
+              </div>
+              <div class="filter-rent_block filter-rent_block--profit">
+                <p class="block_title">Прибыль от, ₽</p>
+                <input class="location_input location_input--profit" type="text" placeholder="0" name="profit">
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+  <script src="js/bsale.js"></script>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>RBM Group</title>
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body">
+    <div class="page_body-wrapper">
+      <section class="header">
+        <nav class="header_nav" id="header-nav">
+          <img class="header_menu" src="img/icons/menu.svg" id="header-menu" alt="">
+          <a href="index.html">
+            <img class="header_logo" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+          </a>
+          <img class="header_close" src="img/icons/exit.svg" id="header-close" alt="">
+          <div class="header_nav-wrapper" id="header-nav-wrapper">
+            <a class="header_nav-item" href="rent.html">Аренда</a>
+            <a class="header_nav-item header_nav-item--active">Покупка (инвестиции)</a>
+            <a class="header_nav-item" href="bsale.html">Готовый бизнес</a>
+          </div>
+        </nav>
+      </section>
+      <section class="filter-rent">
+        <form class="filter-rent_form">
+          <div class="filter-rent_objects">
+            <h1 class="filter-rent_title">Покупка коммерческой недвижимости в Санкт-Петербурге</h1>
+            <div class="filter-rent_checks">
+              <label for="actual-sale" class="objects_label">
+                <input type="checkbox" class="visually-hidden input-actual" id="actual-sale" name="actualSale">
+                <img class="check-icon input-actual__empty" src="img/icons/check-empty.svg" alt="">
+                <img class="check-icon input-actual__filled check-icon" src="img/icons/check-filled.svg" alt="">
+                <p class="input_title">Актуальные объекты</p>
+              </label>
+              <label for="occupied-sale" class="objects_label">
+                <input type="checkbox" class="visually-hidden input-occupied" id="occupied-sale" name="occupiedSale">
+                <img class="check-icon input-occupied__empty" src="img/icons/check-empty.svg" alt="">
+                <img class="check-icon input-occupied__filled" src="img/icons/check-filled.svg" alt="">
+                <p class="input_title">Объекты уже заняты</p>
+              </label>
+            </div>
+          </div>
+          <div class="filter-rent_filter">
+            <div class="filter-sale_filter-wrapper">
+              <div class="filter-rent_block filter-rent_block--rent">
+                <p class="block_title">Что ищем?</p>
+                <div class="filter-rent_checks--mobile">
+                  <label for="actual-sale-mobile" class="objects_label">
+                    <input type="checkbox" class="visually-hidden input-actual" id="actual-sale-mobile" name="actualSaleMobile">
+                    <img class="check-icon input-actual__empty" src="img/icons/check-empty.svg" alt="">
+                    <img class="check-icon input-actual__filled" src="img/icons/check-filled.svg" alt="">
+                    <p class="input_title">Актуальные объекты</p>
+                  </label>
+                  <label for="occupied-sale-mobile" class="objects_label">
+                    <input type="checkbox" class="visually-hidden input-occupied" id="occupied-sale-mobile" name="occupiedSaleMobile">
+                    <img class="check-icon input-occupied__empty" src="img/icons/check-empty.svg" alt="">
+                    <img class="check-icon input-occupied__filled" src="img/icons/check-filled.svg" alt="">
+                    <p class="input_title">Объекты уже заняты</p>
+                  </label>
+                </div>
+                <div class="type_wrapper">
+                  <label for="all-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="all-sale" name="allSale">
+                    <div class="type_category">Все объекты</div>
+                  </label>
+                  <label for="сommercial-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="сommercial-sale" name="сommercialSale">
+                    <div class="type_category">Торговое</div>
+                  </label>
+                  <label for="ofice-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="ofice-sale" name="oficeSale">
+                    <div class="type_category">Офисы</div>
+                  </label>
+                  <label for="hotel-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="hotel-sale" name="hotelSale">
+                    <div class="type_category">Отели</div>
+                  </label>
+                  <label for="autoservice-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="autoservice-sale" name="autoserviceSale">
+                    <div class="type_category">Автосервис, мойка</div>
+                  </label>
+                </div>
+                <div class="type_wrapper">
+                  <label for="spa-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="spa-sale" name="spaSale">
+                    <div class="type_category">Сауна, SPA</div>
+                  </label>
+                  <label for="catering-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="catering-sale" name="cateringSale">
+                    <div class="type_category">Общепит</div>
+                  </label>
+                  <label for="warehouse-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="warehouse-sale" name="warehouseSale">
+                    <div class="type_category">Склады</div>
+                  </label>
+                  <label for="medical-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="medical-sale" name="medicalSale">
+                    <div class="type_category">Мед. центр</div>
+                  </label>
+                  <div class="type-dropdown" id="sale-dropdown">
+                    <input class="type-dropdown_input" id="sale-input" type="text" value="Другое" name="otherSale" readonly>
+                    <div class="type-dropdown_options">
+                      <div class="options_item" onclick="showSale('Другое')">Другое</div>
+                      <div class="options_item" onclick="showSale('Ларек')">Ларек</div>
+                      <div class="options_item" onclick="showSale('Стадион')">Стадион</div>
+                      <div class="options_item" onclick="showSale('Парковка')">Парковка</div>
+                    </div>
+                </div>
+                </div>
+              </div>
+              <div class="filter-rent_block filter-sale_block--budget">
+                <p class="block_title">Бюджет, ₽</p>
+                <div class="price_wrapper">
+                  <input class="price_input sale_price" type="text" placeholder="От" name="rentPriceMin">
+                  <input class="price_input sale_price sale_price--to" type="text" placeholder="До" name="rentPriceMax">
+                </div>
+                <div class="checks-wrapper">
+                  <label class="form-switch arendator_label">
+                    <input type="checkbox" name="arendator">
+                    <i></i>
+                    <span class="form-switch_title">Только с арендатором</span>
+                  </label>
+                  <label class="form-switch">
+                    <input type="checkbox" name="payback">
+                    <i></i>
+                    <span class="form-switch_title">Окупаемость до 12 лет</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-rent_block filter-rent_block--square">
+                <p class="block_title">Площадь, м<sup>2</sup></p>
+                <div class="price_wrapper">
+                  <input class="price_input  sale_price" type="text" placeholder="От" name="squareMin">
+                  <input class="price_input sale_price sale_price--to" type="text" placeholder="До" name="squareMax">
+                </div>
+                <label class="form-switch">
+                  <input type="checkbox" name="first-floor">
+                  <i></i>
+                  <span class="form-switch_title">Только 1 этаж</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+  <script src="js/sale.js"></script>
+</html>
