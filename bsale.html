@@ -74,10 +74,10 @@
                   <div class="type-dropdown" id="bsale-dropdown">
                     <input class="type-dropdown_input" id="bsale-input" type="text" value="Другое" name="otherBsale" readonly>
                     <div class="type-dropdown_options">
-                      <div class="options_item" onclick="showBsale('Другое')">Другое</div>
-                      <div class="options_item" onclick="showBsale('Ларек')">Ларек</div>
-                      <div class="options_item" onclick="showBsale('Стадион')">Стадион</div>
-                      <div class="options_item" onclick="showBsale('Парковка')">Парковка</div>
+                      <div class="options_item">Другое</div>
+                      <div class="options_item">Ларек</div>
+                      <div class="options_item">Стадион</div>
+                      <div class="options_item">Парковка</div>
                     </div>
                   </div>
                 </div>
@@ -116,10 +116,10 @@
                 <div class="type-dropdown dropdown--payback" id="payback-dropdown">
                   <input class="type-dropdown_input" id="payback-input" type="text" value="Любая" name="paybackBsale" readonly>
                   <div class="type-dropdown_options dropdown_options--payback">
-                    <div class="options_item options_item--payback" onclick="showPayback('Любая')">Любая</div>
-                    <div class="options_item options_item--payback" onclick="showPayback('3 года')">3 года</div>
-                    <div class="options_item options_item--payback" onclick="showPayback('5 лет')">5 лет</div>
-                    <div class="options_item options_item--payback" onclick="showPayback('7 лет')">7 лет</div>
+                    <div class="options_item--payback">Любая</div>
+                    <div class="options_item--payback">3 года</div>
+                    <div class="options_item--payback">5 лет</div>
+                    <div class="options_item--payback">7 лет</div>
                   </div>
                 </div>
                 <label class="form-switch">
@@ -565,5 +565,5 @@
       </section>
     </div>
   </body>
-  <script src="js/bsale.js"></script>
+  <script src="js/bsale.js" type="module" defer></script>
 </html>

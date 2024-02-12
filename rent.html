@@ -104,10 +104,10 @@
                   <div class="type-dropdown" id="rent-dropdown">
                     <input class="type-dropdown_input" id="rent-input" type="text" value="Другое" name="other" readonly>
                     <div class="type-dropdown_options">
-                      <div class="options_item" onclick="show('Другое')">Другое</div>
-                      <div class="options_item" onclick="show('Ларек')">Ларек</div>
-                      <div class="options_item" onclick="show('Стадион')">Стадион</div>
-                      <div class="options_item" onclick="show('Парковка')">Парковка</div>
+                      <div class="options_item">Другое</div>
+                      <div class="options_item">Ларек</div>
+                      <div class="options_item">Стадион</div>
+                      <div class="options_item">Парковка</div>
                     </div>
                 </div>
                 </div>
@@ -167,7 +167,7 @@
       </div>
       <section class="rent_catalog">
         <ul class="card-list">
-          <li class="card">
+          <li class="card" id="1">
             <div class="card_wrapper">
               <div class="card_slider">
                 <div class="slider_container">
@@ -240,7 +240,7 @@
               </div>
             </div>
           </li>
-          <li class="card">
+          <li class="card" id="2">
             <div class="card_wrapper">
               <div class="card_slider">
                 <div class="slider_container">
@@ -313,7 +313,7 @@
               </div>
             </div>
           </li>
-          <li class="card">
+          <li class="card" id="3">
             <div class="card_wrapper">
               <div class="card_slider">
                 <div class="slider_container">
@@ -386,7 +386,7 @@
               </div>
             </div>
           </li>
-          <li class="card">
+          <li class="card" id="4">
             <div class="card_wrapper">
               <div class="card_slider">
                 <div class="slider_container">
@@ -475,5 +475,5 @@
       </section>
     </div>
   </body>
-  <script src="js/rent.js"></script>
+  <script src="js/rent.js" type="module" defer></script>
 </html>
