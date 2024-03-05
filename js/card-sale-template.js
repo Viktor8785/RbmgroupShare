@@ -1,1 +1,116 @@
-export const cardSale='<a class="card" href="object-sale.html">\n  <div class="card_wrapper">\n    <div class="card_slider">\n      <div class="slider_container">\n        <picture class="card_picture">\n          <img class="card_img" src="img/Card2-desktop.jpg" alt="Ресторан">\n          <div class="object-sale_water">\n            <img class="card_img" src="img/watermark/watermark-card.png" alt="">\n          </div>\n        </picture>\n        <picture class="card_picture">\n          <img class="card_img" src="img/Card1-desktop.jpg" alt="Ресторан">\n          <div class="object-sale_water">\n            <img class="card_img" src="img/watermark/watermark-card.png" alt="">\n          </div>\n        </picture>\n        <picture class="card_picture">\n          <img class="card_img" src="img/Card3-desktop.jpg" alt="Ресторан">\n          <div class="object-sale_water">\n            <img class="card_img" src="img/watermark/watermark-card.png" alt="">\n          </div>\n        </picture>\n        <picture class="card_picture">\n          <img class="card_img" src="img/Card4-desktop.jpg" alt="Ресторан">\n          <div class="object-sale_water">\n            <img class="card_img" src="img/watermark/watermark-card.png" alt="">\n          </div>\n        </picture>\n        <picture class="card_picture">\n          <img class="card_img" src="img/Card5-desktop.jpg" alt="Ресторан">\n          <div class="object-sale_water">\n            <img class="card_img" src="img/watermark/watermark-card.png" alt="">\n          </div>\n        </picture>\n      </div>\n      <div class="card_picture-wrapper">\n        <div class="card_picture-stickers">\n          <div class="stickers_wrapper">\n            <div class="stickers_item item_color-number">\n              №1233\n            </div>\n          </div>\n          <img class="stickers-icon" src="img/icons/heart.svg" alt="">\n          <div class="card_picture-bullets">\n            <div class="bullet-wrapper bullet-wrapper--active">\n              <div class="bullet"></div>\n            </div>\n            <div class="bullet-wrapper">\n              <div class="bullet"></div>\n            </div>\n            <div class="bullet-wrapper">\n              <div class="bullet"></div>\n            </div>\n            <div class="bullet-wrapper">\n              <div class="bullet"></div>\n            </div>\n            <div class="bullet-wrapper">\n              <div class="bullet"></div>\n            </div>\n          </div>\n          <div class="card_picture-count">\n            Еще <br>4 фото\n          </div>\n        </div>\n        <div class="sector"></div>\n        <div class="sector"></div>\n        <div class="sector"></div>\n        <div class="sector"></div>\n        <div class="sector"></div>\n      </div>\n    </div>\n    <h2 class="card-title">Продажа помещения с арендатором и<br> окупаемостью за 145 месяцев</h2>\n    <p class="card_subtitle">Большой Сампсониевский пр-т  19</p>\n    <div class="card_features-wrapper">\n      <div class="features_object">\n        <div class="feature_item">\n          <img class="feature_item-icon" src="img/icons/maximize.svg" alt="">\n          <p class="feature_item-title">120 м<sup>2</sup></p>\n        </div>\n        <div class="feature_item">\n          <img class="feature_item-icon" src="img/icons/arrow-up.svg" alt="">\n          <p class="feature_item-title">1 этаж</p>\n        </div>\n        <div class="feature_item">\n          <img class="feature_item-icon" src="img/icons/map.svg" alt="">\n          <p class="feature_item-title">Спальный район</p>\n        </div>\n      </div>\n      <div class="features_object feature_feature">\n        <div class="feature_item">\n          <img class="feature_item-icon" src="img/icons/terras.svg" alt="">\n          <p class="feature_item-title">Терраса</p>\n        </div>\n        <div class="feature_item">\n          <img class="feature_item-icon" src="img/icons/wind.svg" alt="">\n          <p class="feature_item-title">Вытяжка</p>\n        </div>\n        <div class="feature_item">\n          <img class="feature_item-icon" src="img/icons/blur.svg" alt="">\n          <p class="feature_item-title">Водоснабжение</p>\n        </div>\n      </div>\n    </div>\n    <div class="card_finance-wrapper">\n      <div class="finance_item">\n        <p class="finance_item-title1">9,5% / 145 мес</p>\n        <p class="finance_item_subtitle">доходность / окупаемость</p>\n      </div>\n      <div class="finance_item">\n        <p class="finance_item-title2">444 000 000 ₽</p>\n        <p class="finance_item_subtitle">100 000 ₽/м2</p>\n      </div>\n    </div>\n  </div>\n</a>';
+export const cardSale =
+`<a class="card" href="object-sale.html">
+  <div class="card_wrapper">
+    <div class="card_slider">
+      <div class="slider_container">
+        <picture class="card_picture">
+          <img class="card_img" src="img/Card2-desktop.jpg" alt="Ресторан">
+          <div class="object-sale_water">
+            <img class="card_img" src="img/watermark/watermark-card.png" alt="">
+          </div>
+        </picture>
+        <picture class="card_picture">
+          <img class="card_img" src="img/Card1-desktop.jpg" alt="Ресторан">
+          <div class="object-sale_water">
+            <img class="card_img" src="img/watermark/watermark-card.png" alt="">
+          </div>
+        </picture>
+        <picture class="card_picture">
+          <img class="card_img" src="img/Card3-desktop.jpg" alt="Ресторан">
+          <div class="object-sale_water">
+            <img class="card_img" src="img/watermark/watermark-card.png" alt="">
+          </div>
+        </picture>
+        <picture class="card_picture">
+          <img class="card_img" src="img/Card4-desktop.jpg" alt="Ресторан">
+          <div class="object-sale_water">
+            <img class="card_img" src="img/watermark/watermark-card.png" alt="">
+          </div>
+        </picture>
+        <picture class="card_picture">
+          <img class="card_img" src="img/Card5-desktop.jpg" alt="Ресторан">
+          <div class="object-sale_water">
+            <img class="card_img" src="img/watermark/watermark-card.png" alt="">
+          </div>
+        </picture>
+      </div>
+      <div class="card_picture-wrapper">
+        <div class="card_picture-stickers">
+          <div class="stickers_wrapper">
+            <div class="stickers_item item_color-number">
+              №1233
+            </div>
+          </div>
+          <img class="stickers-icon" src="img/icons/heart.svg" alt="">
+          <div class="card_picture-bullets">
+            <div class="bullet-wrapper bullet-wrapper--active">
+              <div class="bullet"></div>
+            </div>
+            <div class="bullet-wrapper">
+              <div class="bullet"></div>
+            </div>
+            <div class="bullet-wrapper">
+              <div class="bullet"></div>
+            </div>
+            <div class="bullet-wrapper">
+              <div class="bullet"></div>
+            </div>
+            <div class="bullet-wrapper">
+              <div class="bullet"></div>
+            </div>
+          </div>
+          <div class="card_picture-count">
+            Еще <br>4 фото
+          </div>
+        </div>
+        <div class="sector"></div>
+        <div class="sector"></div>
+        <div class="sector"></div>
+        <div class="sector"></div>
+        <div class="sector"></div>
+      </div>
+    </div>
+    <h2 class="card-title">Продажа помещения с арендатором и<br> окупаемостью за 145 месяцев</h2>
+    <p class="card_subtitle">Большой Сампсониевский пр-т  19</p>
+    <div class="card_features-wrapper">
+      <div class="features_object">
+        <div class="feature_item">
+          <img class="feature_item-icon" src="img/icons/maximize.svg" alt="">
+          <p class="feature_item-title">120 м<sup>2</sup></p>
+        </div>
+        <div class="feature_item">
+          <img class="feature_item-icon" src="img/icons/arrow-up.svg" alt="">
+          <p class="feature_item-title">1 этаж</p>
+        </div>
+        <div class="feature_item">
+          <img class="feature_item-icon" src="img/icons/map.svg" alt="">
+          <p class="feature_item-title">Спальный район</p>
+        </div>
+      </div>
+      <div class="features_object feature_feature">
+        <div class="feature_item">
+          <img class="feature_item-icon" src="img/icons/terras.svg" alt="">
+          <p class="feature_item-title">Терраса</p>
+        </div>
+        <div class="feature_item">
+          <img class="feature_item-icon" src="img/icons/wind.svg" alt="">
+          <p class="feature_item-title">Вытяжка</p>
+        </div>
+        <div class="feature_item">
+          <img class="feature_item-icon" src="img/icons/blur.svg" alt="">
+          <p class="feature_item-title">Водоснабжение</p>
+        </div>
+      </div>
+    </div>
+    <div class="card_finance-wrapper">
+      <div class="finance_item">
+        <p class="finance_item-title1">9,5% / 145 мес</p>
+        <p class="finance_item_subtitle">доходность / окупаемость</p>
+      </div>
+      <div class="finance_item">
+        <p class="finance_item-title2">444 000 000 ₽</p>
+        <p class="finance_item_subtitle">100 000 ₽/м2</p>
+      </div>
+    </div>
+  </div>
+</a>`

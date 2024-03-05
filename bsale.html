@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-180x180.png">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=90e62564-743f-4733-ad86-5febdffc492c&lang=ru_RU"></script>
   </head>
   <body class="page__body">
     <div class="page_body-wrapper">
@@ -144,6 +145,8 @@
         <div>
           <ul class="card-list card-list--deal">
           </ul>
+          <div class="pagination-wrapper">
+          </div>
           <div class="rent_recall">
             <div class="recall_title-wrapper">
               <p class="recall_title">Предложения по вашему запросу<br class="recall_br"> закончились</p>
@@ -152,10 +155,7 @@
             <button class="recall_button">Перезвоните мне</button>
           </div>
         </div>
-        <div class="rent_catalog-map">
-          <a href="https://yandex.ru/maps/2/saint-petersburg/geo/nevskiy_prospekt/8019294/?ll=30.349012%2C59.930534&utm_medium=mapframe&utm_source=maps&z=14.74" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
-          <iframe class="map_img" src="https://yandex.ru/map-widget/v1/?ll=30.349012%2C59.930534&utm_source=ntp_chrome&z=14.74" frameborder="0" allowfullscreen="true" style="position:relative;">
-          </iframe>
+        <div class="rent_catalog-map" id="map">
         </div>
       </section>
     </div>

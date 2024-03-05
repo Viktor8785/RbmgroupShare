@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-180x180.png">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=90e62564-743f-4733-ad86-5febdffc492c&lang=ru_RU"></script>
   </head>
   <body class="page__body">
     <div class="page_body-wrapper">
@@ -206,10 +207,7 @@
               <img class="photos_img" src="img/sale/photos5-desktop.jpg" alt="Ресторан">
             </picture>
           </div>
-          <div class="object-sale-map">
-            <a href="https://yandex.ru/maps/2/saint-petersburg/geo/nevskiy_prospekt/8019294/?ll=30.349012%2C59.930534&utm_medium=mapframe&utm_source=maps&z=14.74" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
-            <iframe class="object-sale_map-img" src="https://yandex.ru/map-widget/v1/?ll=30.349012%2C59.930534&utm_source=ntp_chrome&z=14.74" frameborder="0" allowfullscreen="true" style="position:relative;">
-            </iframe>
+          <div class="object-sale-map" id="map">
           </div>
         </div>
       </section>
