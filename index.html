@@ -8,28 +8,547 @@
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-180x180.png">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=90e62564-743f-4733-ad86-5febdffc492c&lang=ru_RU"></script> -->
+    <script src="https://api-maps.yandex.ru/v3/?apikey=483a48b3-a9a5-42db-9afc-6c606bc01d8a&lang=ru_RU"></script>
   </head>
   <body class="page__body">
     <div class="page_body-wrapper">
       <section class="header">
-        <nav class="header_nav" id="header-nav">
-          <img class="header_menu" src="img/icons/menu.svg" id="header-menu" alt="">
-          <img class="header_logo" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
-          <img class="header_close" src="img/icons/exit.svg" id="header-close" alt="">
-          <div class="header_nav-wrapper" id="header-nav-wrapper">
-            <a class="header_nav-item" href="rent.html">Аренда</a>
-            <a class="header_nav-item" href="sale.html">Покупка (инвестиции)</a>
-            <a class="header_nav-item" href="bsale.html">Готовый бизнес</a>
-          </div>
-        </nav>
-      </section>
-      <section class="catalog">
-        <div>
-          <ul class="card-list">
-          </ul>
+        <div class="header-wrapper">
+          <nav class="header_nav" id="header-nav">
+            <img class="header_menu" src="img/icons/menu.svg" id="header-menu" alt="">
+            <a>
+              <img class="header_logo" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+            </a>
+            <img class="header_search" src="img/icons/search.svg" id="header-search" alt="">
+            <img class="header_search-blue" src="img/icons/search-blue.svg" id="header-search-blue" alt="">
+            <a class="header_heart-link_mobile" href="favourites.html" id="header-heart">
+              <div>
+                <img class="header_heart header_heart--view" src="img/icons/heart-empty.svg" id="header-heart-empty" alt="">
+                <img class="header_heart-red" src="img/icons/heart-red.svg" id="header-heart-red" alt="">
+              </div>
+            </a>
+            <img class="header_close" src="img/icons/exit.svg" id="header-close" alt="">
+            <div class="header_nav-wrapper" id="header-nav-wrapper">
+              <form class="header_form" id="header-form">
+                <input type="text" id="header-input" class="header_input" name="search" placeholder="Введите № объекта или улицу">
+              </form>
+              <div class="item-wrapper">
+                <a class="header_nav-item" href="rent.html">Аренда</a>
+                <a class="header_nav-item" href="sale.html">Покупка (инвестиции)</a>
+                <a class="header_nav-item" href="bsale.html">Готовый бизнес</a>
+              </div>
+              <div class="header_nav-phone">
+                <a href="tel:+78129324747" id="header-phone"  class="footer_logo-phone">+7(812)932-47-47</a>
+                <a id="header-recall" class="footer_logo-title footer_logo-title--recall">Заказать звонок</a>
+              </div>
+              <div class="header_nav-social">
+                <a href="https://t.me/share/url?url=@spbrbm" class="footer_social-tg">
+                  <img src="img/icons/tg.svg" class="tg_img" alt="Телеграмм">
+                </a>
+                <a href="https://vk.com/rbmgroup" class="footer_social-vk">
+                  <img src="img/icons/vk.svg" class="vk_img" alt="ВКонтакте">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=79052673439" class="footer_social-wa">
+                  <img src="img/icons/wa.svg" class="wa_img" alt="WhatsApp">
+                </a>
+              </div>
+              <a class="header_heart-link" href="favourites.html">
+                <img class="header_heart-blue header_heart-blue--view" src="img/icons/heart-blue.svg" id="header-heart-blue-empty" alt="">
+                <img class="header_heart-blue-red" src="img/icons/heart-blue-red.svg" id="header-heart-blue-red" alt="">
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="header_search-wrapper" id="header-search-wrapper">
+          <form class="header_form" id="header-form-desc">
+            <input type="text" id="header-input" class="header_input" name="search" placeholder="Введите № объекта или улицу">
+          </form>
         </div>
       </section>
+      <section class="main-page">
+        <div class="main-main">
+          <div class="main-main_context">
+            <h1 class="main-main_title">Коммерческая<br>недвижимость</h1>
+            <p class="main-main_subtitle">15 лет на рынке недвижимости</p>
+            <p class="main-main_subtitle">Более 1 000 успешных сделок по аренде и продаже коммерции</p>
+            <div class="main-main_button-wrapper">
+              <a class="main-main_button" href="sale.html">Купить</a>
+              <a class="main-main_button" href="rent.html">Арендовать</a>
+              <a class="main-main_button" href="bsale.html">Готовый бизнес</a>
+            </div>
+            <div class="main-main_subbutton-wrapper">
+              <div class="main-main_subtitle-wrapper">
+                <p class="main-main_subtitle">Другие действия</p>
+                <img class="main-main_down" src="img/icons/down.svg" alt="">
+              </div>
+              <div class="main-main_subbutton-container">
+                <a class="main-main_subbutton">Продать помещение</a>
+                <a class="main-main_subbutton">Найти арендатора</a>
+                <a class="main-main_subbutton">Продать бизнес</a>
+              </div>
+            </div>
+          </div>
+          <img class="main-main_img" src="img/main/main-main.png" alt="">
+        </div>
+
+        <div class="main-consult">
+          <h2 class="main-consult_title">Бесплатная консультация от наших специалистов</h2>
+          <div class="main-consult_container">
+            <div class="main-consult_wrapper">
+              <img class="main-consult_img-mobile" src="img/main/main-block1-mobile.jpg" alt="">
+              <div class="main-consult_block-context">
+                <div class="block-text">
+                  <h3 class="main-consult_block-title">Для собственников<br>недвижимости</h3>
+                  <p class="main-consult_block-subtitle">Хочу продать помещение или найти надежного арендатора</p>
+                </div>
+                <a class="main-main_button main-main_button--consult">Получить консультацию</a>
+              </div>
+              <img class="main-consult_img" src="img/main/main-block1.png" alt="">
+            </div>
+            <div class="main-consult_wrapper">
+              <img class="main-consult_img-mobile" src="img/main/main-block2-mobile.jpg" alt="">
+              <div class="main-consult_block-context">
+                <div class="block-text">
+                  <h3 class="main-consult_block-title">В поиске объекта?</h3>
+                  <p class="main-consult_block-subtitle">Хочу купить или арендовать помещение</p>
+                </div>
+                <a class="main-main_button main-main_button--consult">Получить консультацию</a>
+              </div>
+              <img class="main-consult_img" src="img/main/main-block2.png" alt="">
+            </div>
+            <div class="main-consult_wrapper">
+              <img class="main-consult_img-mobile" src="img/main/main-block3-mobile.jpg" alt="">
+              <div class="main-consult_block-context">
+                <div class="block-text">
+                  <h3 class="main-consult_block-title">Покупка и продажа<br>готового бизнеса</h3>
+                  <p class="main-consult_block-subtitle">Хочу оценить/продать свой бизнес или купить готовое заведение</p>
+                </div>
+                <a class="main-main_button main-main_button--consult">Получить консультацию</a>
+              </div>
+              <img class="main-consult_img" src="img/main/main-block3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-deals">
+        <h2 class="main-clients_title">Покупка недвижимости</h2>
+        <div class="main-consult_container">
+
+          <div class="main-deals_wrapper">
+            <img class="main-deals_img" src="img/main/main-deals1.jpg" alt="">
+            <img class="main-deals_img-mobile" src="img/main/main-deals1-mobile.jpg" alt="">
+            <div class="main-deals_block-context">
+              <div class="block-text">
+                <h3 class="main-consult_block-title">Инвестиции в коммерческую<br>недвижимость</h3>
+                <p class="main-deals_block-subtitle">Ликвидные объекты и помещения в новостройках под свой бизнес или для сдачи в аренду</p>
+              </div>
+              <a class="main-deals_button" href="sale.html">Смотреть</a>
+            </div>
+          </div>
+
+          <div class="main-deals_wrapper">
+            <img class="main-deals_img" src="img/main/main-deals2.jpg" alt="">
+            <img class="main-deals_img-mobile" src="img/main/main-deals2-mobile.jpg" alt="">
+            <div class="main-deals_block-context">
+              <div class="block-text">
+                <h3 class="main-consult_block-title">Готовый арендный<br>бизнес</h3>
+                <p class="main-deals_block-subtitle">Объекты с надежными, сетевыми арендаторами. Пассивный доход с первого месяца покупки</p>
+              </div>
+              <a class="main-deals_button" href="sale.html">Смотреть</a>
+            </div>
+          </div>
+
+          <div class="main-deals_wrapper">
+            <img class="main-deals_img" src="img/main/main-deals3.jpg" alt="">
+            <img class="main-deals_img-mobile" src="img/main/main-deals3-mobile.jpg" alt="">
+            <div class="main-deals_block-context main-deals_block-context--call">
+              <div class="block-text">
+                <h3 class="main-consult_block-title">Подберем недвижимость<br>по запросу и бюджету</h3>
+                <p class="main-deals_block-subtitle">Просто расскажите, что вы ищите и мы найдем идеальный объект для вас</p>
+              </div>
+              <div class="main-deals_button-wrapper">
+                <a class="main-deals_button main-deals_button--call" href="tel:+78129324747">Позвонить</a>
+                <a class="main-deals_button main-deals_button--whatsapp" href="https://api.whatsapp.com/send/?phone=79052673439">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h2 class="main-clients_title main-deals_title">Аренда</h2>
+        <div class="main-consult_container">
+
+          <div class="main-deals_wrapper">
+            <img class="main-deals_img" src="img/main/main-deals4.jpg" alt="">
+            <img class="main-deals_img-mobile" src="img/main/main-deals4-mobile.jpg" alt="">
+            <div class="main-deals_block-context">
+              <div class="block-text">
+                <h3 class="main-consult_block-title">Торговые помещения</h3>
+                <p class="main-deals_block-subtitle">Под любой вид деятельности, на трафике, все районы города</p>
+              </div>
+              <a class="main-deals_button" href="rent.html">Смотреть</a>
+            </div>
+          </div>
+
+          <div class="main-deals_wrapper">
+            <img class="main-deals_img" src="img/main/main-deals5.jpg" alt="">
+            <img class="main-deals_img-mobile" src="img/main/main-deals5-mobile.jpg" alt="">
+            <div class="main-deals_block-context">
+              <div class="block-text">
+                <h3 class="main-consult_block-title">Помещения под общепит</h3>
+                <p class="main-deals_block-subtitle">Полностью или частично оборудованы и меблированы, ранее располагался общепит. Система вентиляции</p>
+              </div>
+              <a class="main-deals_button" href="rent.html">Смотреть</a>
+            </div>
+          </div>
+
+          <div class="main-deals_wrapper">
+            <img class="main-deals_img" src="img/main/main-deals6.jpg" alt="">
+            <img class="main-deals_img-mobile" src="img/main/main-deals6-mobile.jpg" alt="">
+            <div class="main-deals_block-context main-deals_block-context--call">
+              <div class="block-text">
+                <h3 class="main-consult_block-title">Найдем помещение под ваш<br>бизнес</h3>
+                <p class="main-deals_block-subtitle">Просто напишите нам критерии поиска и специалист подберет объект подходящий под ваш формат бизнеса</p>
+              </div>
+              <div class="main-deals_button-wrapper">
+                <a class="main-deals_button main-deals_button--call" href="tel:+78129324747">Позвонить</a>
+                <a class="main-deals_button main-deals_button--whatsapp" href="https://api.whatsapp.com/send/?phone=79052673439">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="main-data">
+        <div class="main-data_wrapper">
+
+          <div class="main-data_block">
+            <div class="block-text_wrapper">
+              <p class="data-block-title">9591</p>
+              <p class="block-subtitle">объектов<br class="block-br"> в базе</p>
+            </div>
+          </div>
+
+          <div class="main-data_block">
+            <div class="block-text_wrapper">
+              <p class="data-block-title">239</p>
+              <p class="block-subtitle">актуальных<br class="block-br"> продаж</p>
+            </div>
+          </div>
+
+          <div class="main-data_block">
+            <div class="block-text_wrapper">
+              <p class="data-block-title">255</p>
+              <p class="block-subtitle">актуальных<br class="block-br"> аренд</p>
+            </div>
+          </div>
+
+          <div class="main-data_block">
+            <div class="block-text_wrapper">
+              <p class="data-block-title">10</p>
+              <p class="block-subtitle">продаж<br class="block-br"> бизнеса</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="main-finance">
+
+        <div class="finance-block">
+          <div class="block-cover">
+            <img class="block-img" src="img/main/main-finance-descktop.jpg">
+            <img class="block-img-mobile" src="img/main/main-finance-mobile.jpg">
+          </div>
+          <div class="finance-block-container">
+            <h3 class="finance-block-title">Срочный выкуп вашей<br>недвижимости</h3>
+            <div class="finance-block-text_wrapper">
+
+              <div class="block-item_wrapper">
+                <img class="block-item_icon" width="24" height="24" src="img/icons/check-circle.svg">
+                <p class="finance-block-subtitle">Произведем бесплатный выезд и оценку вашего помещения</p>
+              </div>
+
+              <div class="block-item_wrapper">
+                <img class="block-item_icon" width="24" height="24" src="img/icons/check-circle.svg">
+                <p class="finance-block-subtitle">Решим проблемы, связанные с обременением, долгами и ипотекой</p>
+              </div>
+
+              <div class="block-item_wrapper">
+                <img class="block-item_icon" width="24" height="24" src="img/icons/check-circle.svg">
+                <p class="finance-block-subtitle">Гарантия безопасной сделки для каждого клиента</p>
+              </div>
+
+              <div class="block-item_wrapper">
+                <img class="block-item_icon" width="24" height="24" src="img/icons/check-circle.svg">
+                <p class="finance-block-subtitle">Более 100 активных инвесторов, желающих быстро купить ваш объект</p>
+              </div>
+
+            </div>
+            <a class="main-finance_button" href="sale.html">Получить консультацию</a>
+          </div>
+        </div>
+
+        <div class="notary-block">
+          <h3 class="notary-block-title">Займы под залог<br>недвижимости</h3>
+          <div class="finance-block-text_wrapper">
+
+            <div class="block-item_wrapper">
+              <img class="block-item_icon" width="24" height="24" src="img/icons/check-circle.svg">
+              <p class="notary-block-subtitle">Возможность заложить недвижимость с получением до 70% от рыночной<br class="notary-br"> цены</p>
+            </div>
+
+            <div class="block-item_wrapper">
+              <img class="block-item_icon" width="24" height="24" src="img/icons/check-circle.svg">
+              <p class="notary-block-subtitle">С правом досрочного погашения – полностью или частично – в любое<br class="notary-br"> время</p>
+            </div>
+
+            <div class="block-item_wrapper">
+              <img class="block-item_icon" width="24" height="24" src="img/icons/check-circle.svg">
+              <p class="notary-block-subtitle">Нотариальное оформление сделки</p>
+            </div>
+
+          </div>
+          <a class="main-notary_button" href="sale.html">Получить консультацию</a>
+        </div>
+
+      </section>
+
+      <section class="main-clients">
+        <h2 class="main-clients_title">Наши клиенты</h2>
+        <div class="main-clients_wrapper">
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/xlebnik.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/ozon.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/dodo.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/wildberries.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/zolotoy.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/psb.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/lenta.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/five.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <img class="main-clients_img" src="img/main/magnit.png" alt="">
+          </div>
+
+          <div class="main-clients_block">
+            <div class="block-text_wrapper">
+              <p class="block-title">+1000</p>
+              <p class="block-subtitle">клиентов<br>в активном поиске</p>
+            </div>
+          </div>
+
+          <div class="main-clients_block-arendator">
+              <p class="block-arendator-title">Хотите себе такого арендатора?</p>
+              <p class="block-arendator-subtitle">Свяжитесь с нами для получения бесплатной консультации</p>
+              <div class="block-buttons_wrapper">
+                <a class="main-main_button main-main_button-arendator" href="tel:+78129324747">Позвонить</a>
+                <a class="main-main_button main-main_button-arendator" href="https://api.whatsapp.com/send/?phone=79052673439">Написать в WhatsApp</a>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="main-proposals">
+        <h2 class="main-proposals_title">Следить за интересными предложениями</h2>
+        <div class="main-proposals_wrapper">
+
+          <div class="main-proposals_block">
+            <img class="main-proposals_img" src="img/main/main-avito-logo.png" alt="">
+            <div class="block-text_wrapper">
+              <p class="proposals-block-title">Авито</p>
+              <p class="proposals-block-subtitle">Подпишитесь на нас<br>на Авито</p>
+            </div>
+          </div>
+
+          <div class="main-proposals_block">
+            <img class="main-proposals_img" src="img/main/main-invest-logo.png" alt="">
+            <div class="block-text_wrapper">
+              <p class="proposals-block-title">Для инвесторов</p>
+              <p class="proposals-block-subtitle">Телеграм канал с новыми<br>предложениями для инвесторов</p>
+            </div>
+          </div>
+
+          <div class="main-proposals_block">
+            <img class="main-proposals_img" src="img/main/main-rest-logo.png" alt="">
+            <div class="block-text_wrapper">
+              <p class="proposals-block-title">Для рестораторов</p>
+              <p class="proposals-block-subtitle">Телеграм канал с помещениями<br>под ресторанный бизнес</p>
+            </div>
+          </div>
+
+          <div class="main-proposals_block">
+            <img class="main-proposals_img" src="img/main/main-whatsapp-logo.png" alt="">
+            <div class="block-text_wrapper">
+              <p class="proposals-block-title">WhatsApp</p>
+              <p class="proposals-block-subtitle">Любые вопросы в WhatsApp<br>или по телефону
+                <a href="tel:+79045673912" class="proposals-block-phone">+7 904 567 39 12</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="main-projects">
+        <h2 class="main-proposals_title">Наши проекты</h2>
+        <div class="main-projects_wrapper">
+
+          <div class="main-proposals_block">
+            <a class="footer_crm-link" href="https://restojob.ru/">
+              <img class="main-projects_img-rest" src="img/main/main-restojob-logo.svg" alt="">
+            </a>
+            <div class="block-text_wrapper">
+              <p class="proposals-block-subtitle">Сервис для поиска персонала<br>в ресторанной индустрии</p>
+            </div>
+          </div>
+
+          <div class="main-proposals_block">
+            <a class="footer_crm-link" href="https://app.worldcafe.ru/">
+              <img class="main-projects_img-net" src="img/main/main-netwings-logo.png" alt="">
+            </a>
+            <div class="block-text_wrapper">
+              <p class="proposals-block-subtitle">CRM для работы с комерческой<br>недвижимостью</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="main-map">
+        <h2 class="main-map_title">Посетите наш офис</h2>
+        <div class="favourites-map" id="map">
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer_container">
+          <div class="footer_wrapper">
+            <div class="footer_logo">
+              <a href="index.html">
+                <img class="header_logo header_logo--footer" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+              </a>
+              <p class="footer_logo-title footer_logo-title--address">г. Санкт-Петербург, Греческий пр, 29</p>
+            </div>
+            <div class="footer_logo-mobile">
+              <a href="index.html">
+                <img class="header_logo header_logo--footer" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+              </a>
+              <p class="footer_logo-title footer_logo-title--address">г. Санкт-Петербург, Греческий пр, 29</p>
+              <a href="tel:+78129324747" class="footer_logo-phone">+7(812)932-47-47</a>
+              <a  id="footer-recall-mobile" class="footer_logo-title footer_logo-title--recall" id="footer-call">Заказать звонок</a>
+            </div>
+            <div class="footer-link_wrapper">
+              <div class="footer_vacancy">
+                <a class="footer_vacancy-link">О компании</a>
+                <a class="footer_vacancy-link">Вакансии</a>
+                <a class="footer_vacancy-link">Контакты</a>
+              </div>
+              <div class="footer_vacancy">
+                <a class="footer_vacancy-link" href="sale.html">Купить помещение</a>
+                <a class="footer_vacancy-link" href="rent.html">Арендовать помещение</a>
+                <a class="footer_vacancy-link" href="bsale.html">Купить готовый бизнес</a>
+              </div>
+            </div>
+            <div class="footer-contacts">
+              <a href="tel:+78129324747" class="footer_logo-phone">+7(812)932-47-47</a>
+              <a id="footer-recall" class="footer_logo-title footer_logo-title--recall">Заказать звонок</a>
+              <div class="footer_social">
+                <a href="https://t.me/share/url?url=@spbrbm" class="footer_social-tg">
+                  <img src="img/icons/tg.svg" class="tg_img" alt="Телеграмм">
+                </a>
+                <a href="https://vk.com/rbmgroup" class="footer_social-vk">
+                  <img src="img/icons/vk.svg" class="vk_img" alt="ВКонтакте">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=79052673439" class="footer_social-wa">
+                  <img src="img/icons/wa.svg" class="wa_img" alt="WhatsApp">
+                </a>
+              </div>
+            </div>
+            <div class="footer-contacts-mobile">
+              <div class="footer_social">
+                <a href="https://t.me/share/url?url=@spbrbm" class="footer_social-tg">
+                  <img src="img/icons/tg.svg" class="tg_img" alt="Телеграмм">
+                </a>
+                <a href="https://vk.com/rbmgroup" class="footer_social-vk">
+                  <img src="img/icons/vk.svg" class="vk_img" alt="ВКонтакте">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=79052673439" class="footer_social-wa">
+                  <img src="img/icons/wa.svg" class="wa_img" alt="WhatsApp">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_line"></div>
+          <p class="footer_copy">© RBM 2010</p>
+        </div>
+      </footer>
+
+      <!-- Заказать звонок -->
+      <section class="modal-call">
+        <form class="modal-call_wrapper">
+          <div class="modal-call_title-wrapper">
+            <h1 class="modal-call_title">Заказать звонок</h1>
+            <img class="modal-call_close" src="img/icons/exit.svg" id="modal-close" alt="">
+          </div>
+          <div class="modal-call_container">
+            <div class="modal-call_input-wrapper">
+              <input type="text" class="modal-call_input" placeholder="Телефон" id="call-input-phone" name="call-input-phone">
+              <input type="text" class="modal-call_input" placeholder="Имя" id="call-input-name" name="call-input-name">
+            </div>
+            <textarea class="modal-call_text" placeholder="Комментарий" id="call-text" name="call-text"></textarea>
+            <button class="main-main_button main-main_button--call" id="button-phone">Заказать звонок</button>
+            <a class="main-main_button main-main_button--whatsapp"
+             href="https://api.whatsapp.com/send/?phone=79052673439"
+             id="button-whatsapp">Написать в WhatsApp</a>
+          </div>
+        </form>
+      </section>
+
     </div>
+
+    <!-- Маркер на карту-->
+    <template id="marker-template">
+      <div class="">
+        <img class="main-marker-img" src="./img/main/marker.png">
+        <div class="balloon balloon--main">
+          <img class="balloon-img" src="./img/Card1-desktop.jpg">
+          <p class="ballon-price ballon-price--main">г. Санкт-Петербург,</p>
+          <p class="ballon-price ballon-price--main">Греческий пр.29</p>
+          <p class="balloon-title main-balloon-title">Телефон: +7(812)932-47-47</p>
+        </div>
+      </div>
+    </template>
+
   </body>
-  <script src="js/main.js" type="module"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.js" type="module" defer></script>
 </html>

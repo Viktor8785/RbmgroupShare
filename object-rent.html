@@ -8,32 +8,71 @@
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon-180x180.png">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://api-maps.yandex.ru/v3/?apikey=90e62564-743f-4733-ad86-5febdffc492c&lang=ru_RU"></script>
+    <!-- <script src="https://api-maps.yandex.ru/v3/?apikey=90e62564-743f-4733-ad86-5febdffc492c&lang=ru_RU"></script> -->
+    <script src="https://api-maps.yandex.ru/v3/?apikey=483a48b3-a9a5-42db-9afc-6c606bc01d8a&lang=ru_RU"></script>
   </head>
   <body class="page__body">
     <div class="page_body-wrapper">
       <section class="header">
-        <nav class="header_nav" id="header-nav">
-          <img class="header_menu" src="img/icons/menu.svg" id="header-menu" alt="">
-          <a href="index.html">
-            <img class="header_logo" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
-          </a>
-          <img class="header_close" src="img/icons/exit.svg" id="header-close" alt="">
-          <div class="header_nav-wrapper" id="header-nav-wrapper">
-            <a class="header_nav-item" href="rent.html">Аренда</a>
-            <a class="header_nav-item" href="sale.html">Покупка (инвестиции)</a>
-            <a class="header_nav-item" href="bsale.html">Готовый бизнес</a>
-          </div>
-        </nav>
+        <div class="header-wrapper">
+          <nav class="header_nav" id="header-nav">
+            <img class="header_menu" src="img/icons/menu.svg" id="header-menu" alt="">
+            <a href="index.html">
+              <img class="header_logo" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+            </a>
+            <img class="header_search" src="img/icons/search.svg" id="header-search" alt="">
+            <img class="header_search-blue" src="img/icons/search-blue.svg" id="header-search-blue" alt="">
+            <a class="header_heart-link_mobile" href="favourites.html" id="header-heart">
+              <div>
+                <img class="header_heart header_heart--view" src="img/icons/heart-empty.svg" id="header-heart-empty" alt="">
+                <img class="header_heart-red" src="img/icons/heart-red.svg" id="header-heart-red" alt="">
+              </div>
+            </a>
+            <img class="header_close" src="img/icons/exit.svg" id="header-close" alt="">
+            <div class="header_nav-wrapper" id="header-nav-wrapper">
+              <form class="header_form" id="header-form">
+                <input type="text" id="header-input" class="header_input" name="search" placeholder="Введите № объекта или улицу">
+              </form>
+              <div class="item-wrapper">
+                <a class="header_nav-item" href="rent.html">Аренда</a>
+                <a class="header_nav-item" href="sale.html">Покупка (инвестиции)</a>
+                <a class="header_nav-item" href="bsale.html">Готовый бизнес</a>
+              </div>
+              <div class="header_nav-phone">
+                <a href="tel:+78129324747" id="header-phone"  class="footer_logo-phone">+7(812)932-47-47</a>
+                <a id="header-recall" class="footer_logo-title footer_logo-title--recall">Заказать звонок</a>
+              </div>
+              <div class="header_nav-social">
+                <a href="https://t.me/share/url?url=@spbrbm" class="footer_social-tg">
+                  <img src="img/icons/tg.svg" class="tg_img" alt="Телеграмм">
+                </a>
+                <a href="https://vk.com/rbmgroup" class="footer_social-vk">
+                  <img src="img/icons/vk.svg" class="vk_img" alt="ВКонтакте">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=79052673439" class="footer_social-wa">
+                  <img src="img/icons/wa.svg" class="wa_img" alt="WhatsApp">
+                </a>
+              </div>
+              <a class="header_heart-link" href="favourites.html">
+                <img class="header_heart-blue header_heart-blue--view" src="img/icons/heart-blue.svg" id="header-heart-blue-empty" alt="">
+                <img class="header_heart-blue-red" src="img/icons/heart-blue-red.svg" id="header-heart-blue-red" alt="">
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="header_search-wrapper" id="header-search-wrapper">
+          <form class="header_form" id="header-form-desc">
+            <input type="text" id="header-input" class="header_input" name="search" placeholder="Введите № объекта или улицу">
+          </form>
+        </div>
       </section>
       <section class="object-sale">
         <div class="object-sale_header">
           <h1 class="object-sale_title">Аренда на улице Белинского 27, возле длинное название адреса бла Фонтанки</h1>
           <div class="object-sale_stickers-wrapper">
-            <div class="object-sale_stickers-item item_color-number">
-              №12334
-            </div>
-            <img class="object-sale_stickers-icon" src="img/icons/heart-obj.svg" alt="">
+            <div class="object-sale_stickers-item item_color-number">№1234</div>
+            <img class="object-sale_stickers-icon object-sale_stickers-icon--active" src="img/icons/heart-obj.svg" alt="" id="object-heart">
+            <img class="object-sale_stickers-icon" src="img/icons/heart-red.svg" alt="" id="object-heart-red">
           </div>
         </div>
         <div class="object-sale_wrapper">
@@ -43,47 +82,57 @@
               <p class="object-sale_price-subtitle">100 000 ₽/м<span class="price_sup">2</span></p>
             </div>
             <div class="object-sale_stickers-wrapper object-sale_stickers-wrapper--mobile">
-              <div class="object-sale_stickers-item item_color-number">
-                №12334
-              </div>
-              <img class="object-sale_stickers-icon" src="img/icons/heart-obj.svg" alt="">
+              <div class="object-sale_stickers-item item_color-number">№1234</div>
+              <img class="object-sale_stickers-icon object-sale_stickers-icon--active" src="img/icons/heart-obj.svg" alt="" id="object-heart-mob">
+              <img class="object-sale_stickers-icon" src="img/icons/heart-red.svg" alt="" id="object-heart-red-mob">
             </div>
           </div>
-          <picture class="object-sale_picture object-sale_picture--active">
-            <source media="(min-width: 1440px)" srcset="img/sale/object1-desktop.jpg">
-            <img class="object-sale_img" src="img/sale/object1-desktop.jpg" alt="Ресторан">
-            <div class="object-sale_water">
-              <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+          <div class="object-sale_picture-container">
+            <p class="picture-empty">Нет фото</p>
+            <div id="picture-container">
+              <picture class="object-sale_picture">
+                <img class="object-sale_back" src="img/sale/object1-desktop.jpg" alt="Ресторан">
+                <img class="object-sale_img" src="img/sale/object1-desktop.jpg" alt="Ресторан">
+                <div class="object-sale_water">
+                  <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+                </div>
+              </picture>
+              <picture class="object-sale_picture">
+                <img class="object-sale_back" src="img/sale/object2-desktop.jpg" alt="Ресторан">
+                <img class="object-sale_img" src="img/sale/object2-desktop.jpg" alt="Ресторан">
+                <div class="object-sale_water">
+                  <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+                </div>
+              </picture>
+              <picture class="object-sale_picture">
+                <img class="object-sale_back" src="img/sale/object3-desktop.jpg" alt="Ресторан">
+                <img class="object-sale_img" src="img/sale/object3-desktop.jpg" alt="Ресторан">
+                <div class="object-sale_water">
+                  <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+                </div>
+              </picture>
+              <picture class="object-sale_picture">
+                <img class="object-sale_back" src="img/sale/object4-desktop.jpg" alt="Ресторан">
+                <img class="object-sale_img" src="img/sale/object4-desktop.jpg" alt="Ресторан">
+                <div class="object-sale_water">
+                  <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+                </div>
+              </picture>
+              <picture class="object-sale_picture">
+                <img class="object-sale_back" src="img/sale/object5-desktop.jpg" alt="Ресторан">
+                <img class="object-sale_img" src="img/sale/object5-desktop.jpg" alt="Ресторан">
+                <div class="object-sale_water">
+                  <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+                </div>
+              </picture>
             </div>
-          </picture>
-          <picture class="object-sale_picture">
-            <source media="(min-width: 1440px)" srcset="img/sale/object2-desktop.jpg">
-            <img class="object-sale_img" src="img/sale/object2-desktop.jpg" alt="Ресторан">
-            <div class="object-sale_water">
-              <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+            <div class="arrow-left" id="arrow-left">
+              <img class="arrow-img" src="img/icons/arrow-right.svg" alt="Ресторан" width="24px" height="24px">
             </div>
-          </picture>
-          <picture class="object-sale_picture">
-            <source media="(min-width: 1440px)" srcset="img/sale/object3-desktop.jpg">
-            <img class="object-sale_img" src="img/sale/object3-desktop.jpg" alt="Ресторан">
-            <div class="object-sale_water">
-              <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
+            <div class="arrow-right" id="arrow-right">
+              <img class="arrow-img" src="img/icons/arrow-right.svg" alt="Ресторан" width="24px" height="24px">
             </div>
-          </picture>
-          <picture class="object-sale_picture">
-            <source media="(min-width: 1440px)" srcset="img/sale/object4-desktop.jpg">
-            <img class="object-sale_img" src="img/sale/object4-desktop.jpg" alt="Ресторан">
-            <div class="object-sale_water">
-              <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
-            </div>
-          </picture>
-          <picture class="object-sale_picture">
-            <source media="(min-width: 1440px)" srcset="img/sale/object5-desktop.jpg">
-            <img class="object-sale_img" src="img/sale/object5-desktop.jpg" alt="Ресторан">
-            <div class="object-sale_water">
-              <img class="object-sale_img" src="img/watermark/watermark.png" alt="">
-            </div>
-          </picture>
+          </div>
           <div class="object-sale_features">
             <div class="object-sale_features-features">
               <div class="features-features_block">
@@ -143,13 +192,13 @@
                 <p class="bunners-item_title">Вытяжка</p>
               </div>
             </div>
-            <form class="object-sale_recall">
+            <form id="recall" class="object-sale_recall">
               <p class="object-sale-recall_title">Заказать звонок</p>
               <div class="object-sale-recall_input-wrapper">
-                <input type="text" class="object-sale-recall_input" placeholder="Телефон">
-                <input type="text" class="object-sale-recall_input" placeholder="Имя">
+                <input type="text" class="object-sale-recall_input" placeholder="Телефон" id="recall-input">
+                <input type="text" class="object-sale-recall_input" placeholder="Имя" id="recall-input-name">
               </div>
-              <button type="button" class="object-sale-recall_button">Отправить</button>
+              <button type="submit" class="object-sale-recall_button">Отправить</button>
             </form>
           </div>
           <div class="object-sale_description object-rent_description">
@@ -178,26 +227,133 @@
           </div>
           <div class="object-sale_photos-wrapper">
             <picture class="photos_picture">
-              <img class="photos_img" src="img/sale/photos1-desktop.jpg" alt="Ресторан">
+              <img class="photos_img" src="img/sale/object1-desktop.jpg" alt="Ресторан">
             </picture>
             <picture class="photos_picture">
-              <img class="photos_img" src="img/sale/photos2-desktop.jpg" alt="Ресторан">
+              <img class="photos_img" src="img/sale/object2-desktop.jpg" alt="Ресторан">
             </picture>
             <picture class="photos_picture">
-              <img class="photos_img" src="img/sale/photos3-desktop.jpg" alt="Ресторан">
+              <img class="photos_img" src="img/sale/object3-desktop.jpg" alt="Ресторан">
             </picture>
             <picture class="photos_picture">
-              <img class="photos_img" src="img/sale/photos4-desktop.jpg" alt="Ресторан">
+              <img class="photos_img" src="img/sale/object4-desktop.jpg" alt="Ресторан">
             </picture>
             <picture class="photos_picture">
-              <img class="photos_img" src="img/sale/photos5-desktop.jpg" alt="Ресторан">
+              <img class="photos_img" src="img/sale/object5-desktop.jpg" alt="Ресторан">
             </picture>
           </div>
           <div class="object-sale-map" id="map">
           </div>
         </div>
       </section>
+
+      <footer class="footer">
+        <div class="footer_container">
+          <div class="footer_wrapper">
+            <div class="footer_logo">
+              <a href="index.html">
+                <img class="header_logo header_logo--footer" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+              </a>
+              <p class="footer_logo-title footer_logo-title--address">г. Санкт-Петербург, Греческий пр, 29</p>
+            </div>
+            <div class="footer_logo-mobile">
+              <a href="index.html">
+                <img class="header_logo header_logo--footer" src="img/logo.png" id="header-logo" alt="Логотип RBM GROUP">
+              </a>
+              <p class="footer_logo-title footer_logo-title--address">г. Санкт-Петербург, Греческий пр, 29</p>
+              <a href="tel:+78129324747" class="footer_logo-phone">+7(812)932-47-47</a>
+              <a  id="footer-recall-mobile" class="footer_logo-title footer_logo-title--recall" id="footer-call">Заказать звонок</a>
+            </div>
+            <div class="footer-link_wrapper">
+              <div class="footer_vacancy">
+                <a class="footer_vacancy-link">О компании</a>
+                <a class="footer_vacancy-link">Вакансии</a>
+                <a class="footer_vacancy-link">Контакты</a>
+              </div>
+              <div class="footer_vacancy">
+                <a class="footer_vacancy-link" href="sale.html">Купить помещение</a>
+                <a class="footer_vacancy-link" href="rent.html">Арендовать помещение</a>
+                <a class="footer_vacancy-link" href="bsale.html">Купить готовый бизнес</a>
+              </div>
+            </div>
+            <div class="footer-contacts">
+              <a href="tel:+78129324747" class="footer_logo-phone">+7(812)932-47-47</a>
+              <a id="footer-recall" class="footer_logo-title footer_logo-title--recall">Заказать звонок</a>
+              <div class="footer_social">
+                <a href="https://t.me/share/url?url=@spbrbm" class="footer_social-tg">
+                  <img src="img/icons/tg.svg" class="tg_img" alt="Телеграмм">
+                </a>
+                <a href="https://vk.com/rbmgroup" class="footer_social-vk">
+                  <img src="img/icons/vk.svg" class="vk_img" alt="ВКонтакте">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=79052673439" class="footer_social-wa">
+                  <img src="img/icons/wa.svg" class="wa_img" alt="WhatsApp">
+                </a>
+              </div>
+            </div>
+            <div class="footer-contacts-mobile">
+              <div class="footer_social">
+                <a href="https://t.me/share/url?url=@spbrbm" class="footer_social-tg">
+                  <img src="img/icons/tg.svg" class="tg_img" alt="Телеграмм">
+                </a>
+                <a href="https://vk.com/rbmgroup" class="footer_social-vk">
+                  <img src="img/icons/vk.svg" class="vk_img" alt="ВКонтакте">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=79052673439" class="footer_social-wa">
+                  <img src="img/icons/wa.svg" class="wa_img" alt="WhatsApp">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_line"></div>
+          <p class="footer_copy">© RBM 2010</p>
+        </div>
+      </footer>
+
+      <!-- Заказать звонок -->
+      <section class="modal-call">
+        <form class="modal-call_wrapper">
+          <div class="modal-call_title-wrapper">
+            <h1 class="modal-call_title">Заказать звонок</h1>
+            <img class="modal-call_close" src="img/icons/exit.svg" id="modal-close" alt="">
+          </div>
+          <div class="modal-call_container">
+            <div class="modal-call_input-wrapper">
+              <input type="text" class="modal-call_input" placeholder="Телефон" id="call-input-phone" name="call-input-phone">
+              <input type="text" class="modal-call_input" placeholder="Имя" id="call-input-name" name="call-input-name">
+            </div>
+            <textarea class="modal-call_text" placeholder="Комментарий" id="call-text" name="call-text"></textarea>
+            <button class="main-main_button main-main_button--call" id="button-phone">Заказать звонок</button>
+            <a class="main-main_button main-main_button--whatsapp"
+             href="https://api.whatsapp.com/send/?phone=79052673439"
+             id="button-whatsapp">Написать в WhatsApp</a>
+          </div>
+        </form>
+      </section>
+
     </div>
+
+    <section class="modal-recall" id="modal-recall">
+        <img class="modal-recall_close" src="img/icons/exit.svg" id="modal-recall-close" alt="">
+        <p class="modal-recall_title">Мы Вам перезвоним<br>в ближайшее рабочее время</p>
+        <a href="rent.html" class="modal-recall_link">Смотреть другие объекты</a>
+    </section>
+
+    <!-- Маркер на карту-->
+    <template id="marker-template">
+      <div class="marker">
+        <p>250 000 ₽/м</p>
+        <div class="balloon">
+          <img class="balloon-img" src="./img/Card1-desktop.jpg">
+          <p class="balloon-title">Помещение 120 м2</p>
+          <p class="balloon-address">Матросова 66А</p>
+          <p class="ballon-price">250 000 ₽/м</p>
+        </div>
+      </div>
+    </template>
+
   </body>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/object.js" type="module" defer></script>
+
 </html>

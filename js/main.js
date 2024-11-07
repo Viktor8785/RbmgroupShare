@@ -1,33 +1,41 @@
 import {header} from './header.js';
-import {sliderInit} from './slider.js'
-import {cardBsale} from './card-bsale-template.js';
-import {cardSale} from './card-sale-template.js';
-import {cardRent} from './card-rent-template.js';
+import {footer} from './footer.js';
+import {modal} from './modal.js';
+import {initMap, createMarkerList, deleteMarkerList, changeCenter, ZOOM} from './map.js';
 
-const cardList = document.querySelector('.card-list');
-const cards = cardList.children;
-
-createCards(cardRent, 0);
-createCards(cardSale, 1);
-createCards(cardBsale, 2);
-createCards(cardRent, 3);
-
-function createCards(template, index) {
-  const div = document.createElement('div');
-  div.innerHTML = template;
-  const container = div.querySelector(".slider_container");
-  const pictures = container.querySelectorAll(".card_picture");
-  [...pictures][0].classList.remove('card_picture--active');
-  const picture = [...pictures][index].cloneNode(true);
-  picture.classList.add('card_picture--active');
-  [...pictures][index].remove();
-  container.insertAdjacentElement('afterbegin', picture);
-  cardList.insertAdjacentElement('afterbegin', div.firstElementChild);
+const data = {
+  lon: 30.370089,
+  lat: 59.938523,
 };
 
-[...cards].forEach(card => {
-  const slider = card.querySelector('.card_wrapper');
-  sliderInit(slider, card, 5);
-})
+const map = document.querySelector("#map");
+const buttonsWrapper = document.querySelector(".main-main_subtitle-wrapper");
+const buttons = document.querySelector(".main-main_subbutton-container");
+const down = document.querySelector(".main-main_down");
+
+buttonsWrapper.addEventListener('click', () => {
+  if (buttons.classList.contains('main-main_subbutton-container--open')) {
+    buttons.classList.remove('main-main_subbutton-container--open');
+    down.classList.remove('main-main_down--up');
+  } else {
+    buttons.classList.add('main-main_subbutton-container--open');
+    down.classList.add('main-main_down--up');
+  }
+});
+
+let loadMap = false;
+
+initMap().then(map => {
+  loadMap = true;
+  const location = {
+    center: [data.lon, data.lat],
+    zoom: ZOOM
+  }
+  changeCenter(location);
+  deleteMarkerList(map);
+  createMarkerList([data], map);
+});
 
 header();
+footer();
+modal();
