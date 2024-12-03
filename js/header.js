@@ -81,7 +81,6 @@ export function header() {
   headerRecallDesktop.addEventListener('click', (ev) => {
     if(modal) {
       modal.classList.add('modal-call--active');
-      console.log(modal.classList)
     }
   });
 
