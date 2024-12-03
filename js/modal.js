@@ -2,6 +2,8 @@ const modalWindow = document.querySelector(".modal-call");
 const modalCallWrapper = document.querySelector(".modal-call_wrapper");
 const modalClose = document.querySelector(".modal-call_close");
 const headerRecall = document.querySelector("#header-recall");
+const headerRecallDesktop = document.querySelector("#header-recall-desktop");
+const footerRecallDesktop = document.querySelector("#footer-recall-desktop");
 const footerRecall = document.querySelector("#footer-recall");
 const footerRecallMobile = document.querySelector("#footer-recall-mobile");
 const buttonPhone = document.querySelector("#button-phone");
@@ -20,6 +22,8 @@ export function modal() {
     document.addEventListener('click', (e) => {
       if(!e.composedPath().includes(modalCallWrapper) &&
         !e.composedPath().includes(headerRecall) &&
+        !e.composedPath().includes(headerRecallDesktop) &&
+        !e.composedPath().includes(footerRecallDesktop) &&
         !e.composedPath().includes(footerRecall) &&
         !e.composedPath().includes(footerRecallMobile) &&
         modalWindow.classList.contains('modal-call--active')) {

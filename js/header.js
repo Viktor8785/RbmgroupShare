@@ -13,6 +13,7 @@ const headerClose = document.querySelector("#header-close");
 const headerSearchWrapper = document.querySelector("#header-search-wrapper");
 const headerPhone = document.querySelector("#header-phone");
 const headerRecall = document.querySelector("#header-recall");
+const headerRecallDesktop = document.querySelector("#header-recall-desktop");
 const headerForm = document.querySelector("#header-form");
 const headerFormDesc = document.querySelector("#header-form-desc");
 const modal = document.querySelector(".modal-call");
@@ -74,6 +75,13 @@ export function header() {
     }
     if(modal) {
       modal.classList.add('modal-call--active');
+    }
+  });
+
+  headerRecallDesktop.addEventListener('click', (ev) => {
+    if(modal) {
+      modal.classList.add('modal-call--active');
+      console.log(modal.classList)
     }
   });
 

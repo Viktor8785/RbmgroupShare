@@ -10,6 +10,7 @@ let sliderTrack = [];
 let slides = [];
 let bullets = [];
 let sectors = [];
+let cardPictureCount = [];
 let slideWidth;
 let lastTrf;
 let posThreshold;
@@ -234,6 +235,11 @@ let posInit = 0,
     });
     slides[currentCardIndex][index].classList.add('card_picture--active');
     bullets[currentCardIndex][index].classList.add('bullet-wrapper--active');
+    if(index === sectors[currentCardIndex].length - 1) {
+      cardPictureCount[currentCardIndex].classList.add('card_picture-count--active');
+    } else {
+      cardPictureCount[currentCardIndex].classList.remove('card_picture-count--active');
+    }
   };
 
 export function sliderInit(slider, card, n) {
@@ -246,6 +252,7 @@ export function sliderInit(slider, card, n) {
   slides[cardIndex] = slider.querySelectorAll('.card_picture');
   bullets[cardIndex] = slider.querySelectorAll('.bullet-wrapper');
   sectors[cardIndex] = slider.querySelectorAll('.sector');
+  cardPictureCount[cardIndex] = slider.querySelector('.card_picture-count');
 
   slidesCount[cardIndex] = slides[cardIndex].length;
   slideWidth = slides[cardIndex][0].offsetWidth;
