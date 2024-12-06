@@ -21,6 +21,7 @@ const inputs1 = inputWrapper1.querySelectorAll('input');
 const inputs2 = inputWrapper2.querySelectorAll('input');
 const inputAll = document.querySelector('#all-sale');
 const recallLink = document.querySelector('.recall_link');
+const arendatorSale = document.querySelector('#arendator-sale');
 
 const map = document.querySelector("#map");
 
@@ -30,6 +31,11 @@ const inputs = [...inputs1, ...inputs2];
 
 map.style.height = windowHeight + 'px';
 let loadMap = false;
+let url = window.location.href;
+const arendator = new URL(url).searchParams.get('arendator');
+if(arendator) {
+  arendatorSale.checked = true;
+}
 
 actual.checked = true;
 

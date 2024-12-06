@@ -30,9 +30,21 @@ const priceRentMax = document.querySelector("#price-rent-max");
 const squareMin = document.querySelector('#square-min');
 const squareMax = document.querySelector('#square-max');
 const actual = document.querySelector('#actual');
+const commercialRent = document.querySelector('#сommercial-rent');
+const cateringlRent = document.querySelector('#catering-rent');
 
 const windowHeight = document.documentElement.clientHeight;
 const inputs = [...inputs1, ...inputs2];
+
+let url = window.location.href;
+const commercial = new URL(url).searchParams.get('commercial');
+if(commercial) {
+  commercialRent.checked = true;
+}
+const catering = new URL(url).searchParams.get('catering');
+if(catering) {
+  cateringlRent.checked = true;
+}
 
 actual.checked = true;
 
