@@ -92,6 +92,13 @@ let posInit = 0,
       }
     });
     bullets[currentCardIndex][slideIndex[currentCardIndex]].classList.add('bullet-wrapper--active');
+    if(slideIndex[currentCardIndex] === sectors[currentCardIndex].length - 1) {
+      cardPictureCount[currentCardIndex].classList.add('card_picture-count--active');
+      slides[currentCardIndex][slideIndex[currentCardIndex]].classList.add('card_picture--last');
+    } else {
+      cardPictureCount[currentCardIndex].classList.remove('card_picture-count--active');
+      slides[currentCardIndex][slideIndex[currentCardIndex]].classList.remove('card_picture--last');
+    }
   };
 
   const swipeStart = function() {
