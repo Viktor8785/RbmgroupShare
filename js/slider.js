@@ -237,8 +237,10 @@ let posInit = 0,
     bullets[currentCardIndex][index].classList.add('bullet-wrapper--active');
     if(index === sectors[currentCardIndex].length - 1) {
       cardPictureCount[currentCardIndex].classList.add('card_picture-count--active');
+      slides[currentCardIndex][index].classList.add('card_picture--last');
     } else {
       cardPictureCount[currentCardIndex].classList.remove('card_picture-count--active');
+      slides[currentCardIndex][index].classList.remove('card_picture--last');
     }
   };
 
