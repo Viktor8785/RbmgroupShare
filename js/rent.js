@@ -9,7 +9,7 @@ const cards = cardList.children;
 
 const buttonWrapper = document.querySelector('.pagination-site-number-wrapper');
 const filterRent = document.querySelector('#filter-rent');
-const buttons = buttonWrapper.querySelectorAll('button');
+// const buttons = buttonWrapper.querySelectorAll('button');
 const recallLink = document.querySelector('.recall_link');
 
 const inputWrapper1 = document.querySelector('#input-wrapper-1');
@@ -140,16 +140,16 @@ filterRent.addEventListener('submit', (evt) => {
   evt.preventDefault();
 });
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    buttons.forEach(item => {
-      if(item.classList.contains('active')) {
-        item.classList.remove('active');
-      }
-    })
-    button.classList.add('active');
-  });
-});
+// buttons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     buttons.forEach(item => {
+//       if(item.classList.contains('active')) {
+//         item.classList.remove('active');
+//       }
+//     })
+//     button.classList.add('active');
+//   });
+// });
 
 map.style.height = windowHeight + 'px';
 let loadMap = false;

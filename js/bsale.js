@@ -8,7 +8,7 @@ const cardList = document.querySelector('.card-list');
 const cards = cardList.children;
 const buttonWrapper = document.querySelector('.pagination-site-number-wrapper');
 const filterBSale = document.querySelector('#filter-bsale');
-const buttons = buttonWrapper.querySelectorAll('button');
+// const buttons = buttonWrapper.querySelectorAll('button');
 
 const inputWrapper1 = document.querySelector('#input-wrapper-1');
 const inputWrapper2 = document.querySelector('#input-wrapper-2');
@@ -106,16 +106,16 @@ filterBSale.addEventListener('submit', (evt) => {
   evt.preventDefault();
 });
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    buttons.forEach(item => {
-      if(item.classList.contains('active')) {
-        item.classList.remove('active');
-      }
-    })
-    button.classList.add('active');
-  });
-});
+// buttons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     buttons.forEach(item => {
+//       if(item.classList.contains('active')) {
+//         item.classList.remove('active');
+//       }
+//     })
+//     button.classList.add('active');
+//   });
+// });
 
 [...cards].forEach(card => {
   const slider = card.querySelector('.card_wrapper');

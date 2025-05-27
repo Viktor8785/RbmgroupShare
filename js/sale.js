@@ -13,7 +13,7 @@ const priceSaleMax = document.querySelector('#price-sale-max');
 const squareMin = document.querySelector('#square-min');
 const squareMax = document.querySelector('#square-max');
 const actual = document.querySelector('#actual-sale');
-const buttons = buttonWrapper.querySelectorAll('button');
+// const buttons = buttonWrapper.querySelectorAll('button');
 
 const inputWrapper1 = document.querySelector('#input-wrapper-1');
 const inputWrapper2 = document.querySelector('#input-wrapper-2');
@@ -108,16 +108,16 @@ squareMax.addEventListener('keypress', (evt) => {
   }
 });
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    buttons.forEach(item => {
-      if(item.classList.contains('active')) {
-        item.classList.remove('active');
-      }
-    })
-    button.classList.add('active');
-  });
-});
+// buttons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     buttons.forEach(item => {
+//       if(item.classList.contains('active')) {
+//         item.classList.remove('active');
+//       }
+//     })
+//     button.classList.add('active');
+//   });
+// });
 
 [...cards].forEach(card => {
   const slider = card.querySelector('.card_wrapper');
