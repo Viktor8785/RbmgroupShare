@@ -73,13 +73,13 @@
             <h1 class="filter-rent_title">Покупка коммерческой недвижимости<br class="filter-rent_br"> в Санкт-Петербурге</h1>
             <div class="filter-rent_checks">
               <label for="actual-sale" class="objects_label">
-                <input type="checkbox" class="visually-hidden input-actual" id="actual-sale" name="actualSale" checked="checked">
+                <input type="checkbox" class="visually-hidden input-actual" id="actual-sale" name="actual">
                 <img class="check-icon input-actual__empty" src="img/icons/check-empty.svg" alt="">
                 <img class="check-icon input-actual__filled check-icon" src="img/icons/check-filled.svg" alt="">
                 <p class="input_title">Актуальные объекты</p>
               </label>
               <label for="occupied-sale" class="objects_label">
-                <input type="checkbox" class="visually-hidden input-occupied" id="occupied-sale" name="occupiedSale">
+                <input type="checkbox" class="visually-hidden input-occupied" id="occupied-sale" name="occupied">
                 <img class="check-icon input-occupied__empty" src="img/icons/check-empty.svg" alt="">
                 <img class="check-icon input-occupied__filled" src="img/icons/check-filled.svg" alt="">
                 <p class="input_title">Объекты уже заняты</p>
@@ -92,13 +92,13 @@
                 <p class="block_title">Что ищем?</p>
                 <div class="filter-rent_checks--mobile">
                   <label for="actual-sale-mobile" class="objects_label">
-                    <input type="checkbox" class="visually-hidden input-actual" id="actual-sale-mobile" name="actualSaleMobile" checked="checked">
+                    <input type="checkbox" class="visually-hidden input-actual" id="actual-sale-mobile" name="actualMobile">
                     <img class="check-icon input-actual__empty" src="img/icons/check-empty.svg" alt="">
                     <img class="check-icon input-actual__filled" src="img/icons/check-filled.svg" alt="">
                     <p class="input_title">Актуальные объекты</p>
                   </label>
                   <label for="occupied-sale-mobile" class="objects_label">
-                    <input type="checkbox" class="visually-hidden input-occupied" id="occupied-sale-mobile" name="occupiedSaleMobile">
+                    <input type="checkbox" class="visually-hidden input-occupied" id="occupied-sale-mobile" name="occupiedMobile">
                     <img class="check-icon input-occupied__empty" src="img/icons/check-empty.svg" alt="">
                     <img class="check-icon input-occupied__filled" src="img/icons/check-filled.svg" alt="">
                     <p class="input_title">Объекты уже заняты</p>
@@ -109,8 +109,8 @@
                     <input type="checkbox" class="visually-hidden type-all_sale" id="all-sale" name="allSale">
                     <div class="type_category">Все объекты</div>
                   </label>
-                  <label for="сommercial-sale" class="type_label">
-                    <input type="checkbox" class="visually-hidden type-all_sale" id="сommercial-sale" name="сommercialSale">
+                  <label for="commercial-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="commercial-sale" name="commercialSale">
                     <div class="type_category">Торговое</div>
                   </label>
                   <label for="products-sale" class="type_label">
@@ -127,8 +127,8 @@
                   </label>
                 </div>
                 <div class="type_wrapper" id="input-wrapper-2">
-                  <label for="ofice-sale" class="type_label">
-                    <input type="checkbox" class="visually-hidden type-all_sale" id="ofice-sale" name="oficeSale">
+                  <label for="office-sale" class="type_label">
+                    <input type="checkbox" class="visually-hidden type-all_sale" id="office-sale" name="officeSale">
                     <div class="type_category">Офис</div>
                   </label>
                   <label for="warehouse-sale" class="type_label">
@@ -152,8 +152,8 @@
               <div class="filter-rent_block filter-sale_block--budget">
                 <p class="block_title">Бюджет, ₽</p>
                 <div class="price_wrapper">
-                  <input class="price_input sale_price" type="text" placeholder="От" name="rentPriceMin" id="price-sale">
-                  <input class="price_input sale_price sale_price--to" type="text" placeholder="До" name="rentPriceMax" id="price-sale-max">
+                  <input class="price_input sale_price" type="text" placeholder="От" name="salePriceMin" id="price-sale">
+                  <input class="price_input sale_price sale_price--to" type="text" placeholder="До" name="salePriceMax" id="price-sale-max">
                 </div>
                 <div class="checks-wrapper">
                   <div class="form-switch arendator_label">
@@ -165,7 +165,7 @@
                   </div>
                   <div class="form-switch">
                     <label>
-                      <input type="checkbox" name="payback" id="payback-sale">
+                      <input type="checkbox" name="arendatorNetwork" id="payback-sale">
                       <i></i>
                     </label>
                     <span class="form-switch_title">Только сетевой арендатор</span>
@@ -188,7 +188,7 @@
                   </div>
                   <div class="form-switch">
                     <label>
-                      <input type="checkbox" name="first-floor" id="first-floor">
+                      <input type="checkbox" name="firstFloor" id="first-floor">
                       <i></i>
                     </label>
                     <span class="form-switch_title">Только 1 этаж</span>
@@ -1027,10 +1027,10 @@
           </div>
           <div class="modal-call_container">
             <div class="modal-call_input-wrapper">
-              <input type="text" class="modal-call_input" placeholder="Телефон" id="call-input-phone" name="call-input-phone">
-              <input type="text" class="modal-call_input" placeholder="Имя" id="call-input-name" name="call-input-name">
+              <input type="text" class="modal-call_input" placeholder="Телефон" id="call-input-phone" name="callInputPhone">
+              <input type="text" class="modal-call_input" placeholder="Имя" id="call-input-name" name="callInputName">
             </div>
-            <textarea class="modal-call_text" placeholder="Комментарий" id="call-text" name="call-text"></textarea>
+            <textarea class="modal-call_text" placeholder="Комментарий" id="call-text" name="callText"></textarea>
             <button class="main-main_button main-main_button--call" id="button-phone">Заказать звонок</button>
             <a class="main-main_button main-main_button--whatsapp"
              href="https://api.whatsapp.com/send/?phone=79643337552"

@@ -39,16 +39,18 @@ let posInit = 0,
   mediaQueryTablet.addEventListener('change', handleWidthChangeTablet);
 
   function handleWidthChangeMobile(e) {
-    if (e.matches) {
+    if (e.matches && sliderRef) {
       const slides = sliderRef.querySelectorAll('.card_picture');
+      if(!slides) return;
       slideWidth = [...slides][0].offsetWidth;
       startSettings();
     }
   }
 
   function handleWidthChangeTablet(e) {
-    if (e.matches) {
+    if (e.matches && sliderRef) {
       const slides = sliderRef.querySelectorAll('.card_picture');
+      if(!slides) return;
       slideWidth = [...slides][0].offsetWidth;
       startSettings();
     }
